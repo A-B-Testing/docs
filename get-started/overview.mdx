@@ -1,0 +1,55 @@
+---
+title: 'Overview'
+description: 'The easy way to do QA'
+icon: 'globe'
+---
+
+Dime is a tool for building and running E2E tests. It's entirely no-code
+and can be used by non-technical team members. Dime handles:
+- Creating tests
+- Generating verification
+- Manually running tests
+- Integrating testing into your CI/CD flow
+- Automatically keeping your tests in sync with site changes
+- Alerting you on test failures
+- Providing error analysis
+
+Dime's tests are entirely front end based, which means it's 
+stack agnostic. Tests track API calls, changes to the DOM, text updates,
+webhook events, and more.
+
+### Our Focus
+
+There are many other tools for QA testing. Dime has a few key
+points of emphasis:
+- It makes it very fast to build tests. We automate much of the test
+building process, meaning the pieces you spend time on with most
+frameworks--for example, writing selectors or specifying verification--
+are handled for you.
+- It's very easy to use. You build tests by clicking through your website,
+meaning a CPO can builds tests as easily as a SWE. Tests live on the
+Dime servers, sot here's no integration required.
+- It's much less work to maintain. Because our tests are generated using
+the full frontend context of your website, they don't rely on brittle
+selectors or page position to execute actions. When site updates are made,
+our builder detects the change and automatically modifies your tests to
+keep them up to date.
+- It's also highly flexible. Dime has been used to build tests 100 steps
+long, and can handle complex page interactions, account switching,
+multiplayer interactions, and more.
+
+### Limitations
+
+There are a number of use cases Dime isn't a good fit for:
+- Backend-intensive testing. Since Dime is frontend-based and we don't
+access your server code, we're not able to verify behavior happening
+within your backend.
+- Mobile-first applications. We test mobile-friendly web pages and
+mobile applications with an exposed web endpoint, but if your users are
+primarily mobile app users there are better tools out there.
+- Pre-revenue teams. This is a full-service product for teams that
+need a QA solution. It's meant for companies considering making a QA
+hire or looking to improve their QA team.
+
+If you think Dime is a good fit for your site,
+[book a time](https://calendly.com/aaron-dime/intro) to chat with us.

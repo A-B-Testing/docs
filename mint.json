@@ -23,12 +23,8 @@
 	},
 	"navigation": [
 		{
-			"group": "Overview",
-			"pages": [
-				"overview/about",
-				"overview/alternatives",
-				"overview/contact"
-			]
+			"group": "Get started",
+			"pages": ["get-started/overview", "get-started/quickstart"]
 		},
 		{
 			"group": "Tests",
