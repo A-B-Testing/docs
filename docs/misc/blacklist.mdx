@@ -1,0 +1,32 @@
+---
+title: 'Test controls'
+description: 'Modify what API calls your tests allow'
+icon: 'xmarks-lines'
+---
+
+### Overview
+
+By default, your tests trigger exactly what a user would. You can control
+your blacklist and ignore lists in [dime.io/settings](https://dime.io/settings).
+
+### Blacklist and ignore list
+
+Blacklist and ignore list do slightly different things. Adding a string
+to your blacklist will prevent tests from triggering API calls to URLs
+involving that string. Adding it to your ignore list will result in the
+calls still being executed, but they won't show up in the verification for
+that test.
+
+An example of a common blacklisted URL would be a destructive endpoint.
+This allows you to test something like a delete flow while blocking the
+actual delete step. You might also blacklist logging or analytics so that
+the test runs don't pollute real user data.
+
+A common ignore list URL would be a polling endpoint that should happen
+regularly, but that isn't related to the specific actions the test is
+taking. You can also ignore logging that you don't mind happening to
+unclutter things by removing it from the test verification.
+
+To add a value to a list, click the + next to the section. To remove it,
+click on the row. Both blacklist and ignore list will match any URL
+containing the specified string.

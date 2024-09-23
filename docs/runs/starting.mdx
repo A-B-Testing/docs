@@ -1,0 +1,45 @@
+---
+title: 'Starting runs'
+description: 'Execute your tests and view results'
+icon: 'play'
+---
+
+### Overview
+
+You can run tests manually or by setting up an automated trigger. If a test
+fails, the run will contain information about the issue.
+
+### Manual runs
+
+To run your entire suite of tests, click "New suite run". If the button is
+disabled, part of the suite is currently being run or built.
+
+You can run module of tests by clicking the module menu -> "Run module".
+This will similarly be disabled if a test within the module is being run or
+built.
+
+To run an individual test, click on the test to view the test page, then
+click "Run test".
+
+
+## Automated triggers
+
+You can view your triggers under [dime.io/settings](https://dime.io/settings).
+There are two types of triggers: cron and webhook triggers.
+
+### Cron triggers
+
+Creating a cron trigger will run your tests on a regular interval. Pick a
+frequency and save, and the runs will automatically occur at the listed time.
+
+Currently, once a day is the maximum frequency selectable. If you need a
+higher run frequency, reach out to us.
+
+### Webhook triggers
+
+Dime exposes a REST endpoint for triggering runs. The most common use case
+here is for CI/CD. For example, to trigger a run on every update to your
+staging environment, make the provided HTTP call on staging instance startup.
+
+For help configuring the webhook trigger correctly, feel free to reach out
+to the team.
