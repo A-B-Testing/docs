@@ -47,11 +47,16 @@
 			]
 		},
 		{
-			"group": "Runs",
-			"pages": ["runs/starting", "runs/results"]
+			"group": "Test runs",
+			"pages": [
+				"runs/overview",
+				"runs/cron",
+				"runs/webhooks",
+				"runs/alerts"
+			]
 		},
 		{
-			"group": "Misc",
+			"group": "Settings",
 			"pages": ["misc/account", "misc/blacklist"]
 		}
 	],
