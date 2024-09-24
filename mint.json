@@ -30,12 +30,19 @@
 			"pages": ["get-started/overview", "get-started/quickstart"]
 		},
 		{
-			"group": "Tests",
+			"group": "Building tests",
 			"pages": [
-				"building/building",
-				"building/additional",
-				"building/profiles",
-				"building/fragments",
+				"building/adding",
+				{
+					"group": "Using the builder",
+					"icon": "screwdriver-wrench",
+					"pages": [
+						"building/builder/actions",
+						"building/builder/navigation",
+						"building/builder/checks"
+					]
+				},
+				"building/reuse",
 				"building/editing"
 			]
 		},
