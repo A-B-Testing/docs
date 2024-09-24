@@ -32,20 +32,20 @@
 		{
 			"group": "Tests",
 			"pages": [
-				"docs/tests/building",
-				"docs/tests/additional",
-				"docs/tests/profiles",
-				"docs/tests/fragments",
-				"docs/tests/editing"
+				"building/building",
+				"building/additional",
+				"building/profiles",
+				"building/fragments",
+				"building/editing"
 			]
 		},
 		{
 			"group": "Runs",
-			"pages": ["docs/runs/starting", "docs/runs/results"]
+			"pages": ["runs/starting", "runs/results"]
 		},
 		{
 			"group": "Misc",
-			"pages": ["docs/misc/account", "docs/misc/blacklist"]
+			"pages": ["misc/account", "misc/blacklist"]
 		}
 	],
 	"footerSocials": {
