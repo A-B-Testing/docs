@@ -12,12 +12,20 @@ icon: "rocket"
 
 <Steps titleSize="h3">
     <Step title="Start the builder">
-        Go to the [tests](https://dime.io/tests) page and click "Build a test". This starts a browser session and logs you into the webapp you're testing.
+        Go to the [tests](https://dime.io/tests) page and click 
+        "Build a test". This starts a browser session and logs you
+        into the site you're testing.
     </Step>
     <Step title="Define test steps">
-        From here, you can take as many [actions](/building/builder/actions) as you'd like. After each step, click "Do step". And once you're done, click "End test".
+        From here, you can take as many [actions](/building/builder/actions)
+        as you'd like. After each step, click "Do step". And once you're
+        done, click "End test".
 
-        <Info>Dime automatically monitors API calls, UI changes, page navigations, and more, and uses them to build robust verification for each step.</Info>
+        <Info>
+            Dime automatically monitors API calls, UI changes, page
+            navigations, and more, and uses them to build verification for
+            each step.
+        </Info>
 
         <Frame>
             <video
@@ -29,13 +37,20 @@ icon: "rocket"
                 src="/media/dosteps.mp4"
             />
         </Frame>
+        <br />
     </Step>
     <Step title="Set up a cron or webhook trigger">
-       Once you're done building, head over to your [suite settings](https://dime.io/settings) and under the "Triggers" section, create a new cron. Alternatively, set your tests to run on every deploy with the webhook trigger.
+       Once you're done building, head over to your
+       [suite settings](https://dime.io/settings) and create a new
+       trigger. You can set up a [cron job](/runs/cron) to run the test
+       regularly, or a [webhook trigger](/runs/webhooks) to run on every
+       deploy.
     </Step>
 
 </Steps>
 
-## And that's it! 🎉🎉
+## That's it 🎉
 
-To add more tests, click the module options <Icon icon="ellipsis-vertical" /> button on the tests page, and select "New test". Any tests you add to this suite will run on the same trigger as before.
+To add more tests, open the module menu <Icon icon="ellipsis-vertical" />
+on the tests page, and select "New test". Any tests you add to this suite
+will run on the same trigger as before.
