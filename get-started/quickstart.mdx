@@ -1,53 +1,41 @@
 ---
-title: 'Quickstart'
-description: 'Get your first test built in minutes'
-icon: 'rocket'
+title: "Quickstart"
+description: "Build and deploy your first test in less than 5 minutes"
+icon: "rocket"
 ---
 
 <Note>
-Before continuing, you should have talked with the Dime team and created an
-account. Haven't done that?
-[Book a time](https://calendly.com/aaron-dime/intro) with us.
+  Before continuing, you should have talked with the Dime team and received
+  access to your account. Haven't done that? [Book a
+  time](https://calendly.com/aaron-dime/intro) with us.
 </Note>
 
-
-### Building your first test
-
-<Steps>
-    <Step title="Add to a module">
-        Tests are grouped into **modules**, which keep them organized and provide
-        default values for tests, like the starting URL. Your account starts out
-        with a module called "My tests".
-
-        <Tip>
-        Click the module's menu button, then click "New test".
-        </Tip>
-
-        ![screenshot](media/newtest.png)
+<Steps titleSize="h3">
+    <Step title="Start the builder">
+        Go to the [tests](https://dime.io/tests) page and click "Build a test". This starts a browser session and logs you into the webapp you're testing.
     </Step>
-    <Step title="Add steps">
-        We're now on the test details page. The builder begins by loading the
-        module's starting URL, which should be set to your site's home page.
+    <Step title="Define test steps">
+        From here, you can take as many [actions](/building/builder/actions) as you'd like. After each step, click "Do step". And once you're done, click "End test".
 
-        <Tip>
-            Take as many actions--clicks, typing, etc.--as you want. When
-            you're ready to see the changes on the site, click "Do step".
-        </Tip>
+        <Info>Dime automatically monitors API calls, UI changes, page navigations, and more, and uses them to build robust verification for each step.</Info>
 
-        <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full aspect-video"
-            src="/media/dosteps.mp4"
-        />
+        <Frame>
+            <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full aspect-video"
+                src="/media/dosteps.mp4"
+            />
+        </Frame>
     </Step>
-    <Step title="End the test">
-        <Tip>Once you've added a few steps, click "End test" to save the test you've built.</Tip>
+    <Step title="Set up a cron or webhook trigger">
+       Once you're done building, head over to your [suite settings](https://dime.io/settings) and under the "Triggers" section, create a new cron. Alternatively, set your tests to run on every deploy with the webhook trigger.
     </Step>
+
 </Steps>
 
-And that's it! Everything you see is fully functional--names and
-verification have been automatically generated, and you can run the test
-straight away.
+## And that's it! 🎉🎉
+
+To add more tests, click the module options <Icon icon="ellipsis-vertical" /> button on the tests page, and select "New test". Any tests you add to this suite will run on the same trigger as before.
