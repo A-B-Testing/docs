@@ -1,0 +1,45 @@
+---
+title: 'Profiles'
+description: 'Define user accounts for your tests'
+icon: 'user'
+---
+
+<Note>
+    This is a newer feature, and we're actively updating it. Check in with the
+    team for best usage.
+</Note>
+
+<br />
+
+Profiles let you set the logged in user for a test run. You can create new
+profiles at [dime.io/fragments](https://dime.io/fragments), then use them
+during tests to set or switch accounts.
+
+### Creating a profile
+
+Your account will be initialized with one profile. To create a new one,
+Click the plus button and fill in its credentials.
+
+<Frame>
+    <img src="https://firebasestorage.googleapis.com/v0/b/dime-ac49e.appspot.com/o/docs%2Fnewprofile.png?alt=media" />
+</Frame>
+
+### Using a profile
+
+When you create a new module, you'll be able to select a profile for it.
+This will set the default for tests created in that module. For example,
+creating a module with profile "Customer 1" means that tests created in
+that module will begin by logging in as that user.
+
+<Frame>
+    <img src="https://firebasestorage.googleapis.com/v0/b/dime-ac49e.appspot.com/o/docs%2Fmoduleprofile.png?alt=media" />
+</Frame>
+
+During test building, you can switch profiles using the builder menu.
+
+<Frame>
+    <img src="https://firebasestorage.googleapis.com/v0/b/dime-ac49e.appspot.com/o/docs%2Fswitchprofile.png?alt=media" />
+</Frame>
+
+This allows you to create tests that verify how pages behave for different
+logged in accounts.

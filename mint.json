@@ -57,7 +57,15 @@
 		},
 		{
 			"group": "Settings",
-			"pages": ["settings/account", "settings/controls"]
+			"pages": ["settings/account"]
+		},
+		{
+			"group": "Advanced",
+			"pages": [
+				"advanced/profiles",
+				"advanced/fragments",
+				"advanced/network"
+			]
 		}
 	],
 	"footerSocials": {
