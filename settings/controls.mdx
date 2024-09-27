@@ -1,0 +1,39 @@
+---
+title: 'Network controls'
+description: 'Modify what API calls your tests allow'
+icon: 'xmarks-lines'
+---
+
+By default, your tests behave like a user would, but sometimes it's useful to
+block or ignore network activity. We provide two features to accomplish
+this: blacklists and ignore lists.
+
+You can view and update them in
+[dime.io/settings](https://dime.io/settings).
+To add a value to a list, click the + next to the section. To remove it,
+click on the row. Both blacklist and ignore list will match any URL
+containing the specified string.
+
+### Blacklists
+
+Adding a string to your blacklist will prevent tests from triggering
+network activity to URLs involving that string.
+
+An example of a common blacklisted URL would be a destructive endpoint.
+This allows you to test something like a delete flow while blocking the
+actual delete step. You might also blacklist analytics endpoints 
+(e.g. segment or posthog) so that test runs don't pollute real user data.
+
+### Ignore lists
+Adding a string to your ignore list won't change what network activity
+tests cause, but it will filter out URLs containing that string from
+test verification.
+
+A common ignore list URL would be a polling endpoint that happens
+regularly, but that isn't related to the specific actions the test is
+taking. Blocking it (i.e. adding it to the blacklist) might cause the
+site to behave incorrectly, but it shouldn't be part of the verification
+for the test.
+
+You can also ignore calls like logging and analytics, to help unclutter
+the verification for your tests.

@@ -57,7 +57,7 @@
 		},
 		{
 			"group": "Settings",
-			"pages": ["misc/account", "misc/blacklist"]
+			"pages": ["settings/account", "settings/controls"]
 		}
 	],
 	"footerSocials": {
